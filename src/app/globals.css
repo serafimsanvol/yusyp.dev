@@ -25,3 +25,20 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.rounded-lg {
+  border-radius: 1.625rem;
+}
+
+.navbar {
+  @apply rounded-lg;
+  padding: 1rem 1.5rem;
+  @apply bg-neutral;
+  @apply mx-auto;
+}
+
+#drawer-menu {
+  border-radius: 1.25rem;
+  padding: 1rem;
+  @apply bg-neutral;
+}
