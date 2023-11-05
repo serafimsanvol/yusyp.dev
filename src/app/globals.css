@@ -17,7 +17,11 @@
 }
 
 body {
+  transition: all 2s ease-in-out 2s;
   @apply bg-base-100;
+  color: #f2f2f2;
+  @apply max-w-7xl;
+  @apply mx-auto;
 }
 
 .rounded-lg {
@@ -35,4 +39,156 @@ body {
   border-radius: 1.25rem;
   padding: 1rem;
   @apply bg-neutral;
+}
+
+.sections > div:hover {
+  background-size: 500% 110%;
+}
+
+.animated-box {
+  @apply p-6;
+  border-radius: 44px;
+}
+
+@property --secondary-green {
+  syntax: '<color>';
+  initial-value: #3cdba2;
+  inherits: false;
+}
+
+@property --primary-blue {
+  syntax: '<color>';
+  initial-value: #0045ff;
+  inherits: false;
+}
+
+@property --primary-gradient {
+  syntax: '<color>';
+  initial-value: #3cdba2;
+  inherits: false;
+}
+
+@property --secondary-gradient {
+  syntax: '<color>';
+  initial-value: #0045ff;
+  inherits: false;
+}
+
+.about {
+  --primary-gradient: #0045ff;
+  --secondary-gradient: #0045ff;
+  background: linear-gradient(
+    120deg,
+    var(--primary-gradient),
+    var(--secondary-gradient),
+    var(--primary-gradient)
+  );
+  transition: --primary-gradient 0s, --secondary-gradient 1s;
+}
+
+.about:hover {
+  --primary-gradient: #0045ff;
+  --secondary-gradient: #3cdba2;
+}
+
+.projects {
+  --primary-gradient: #202020;
+  --secondary-gradient: #202020;
+  background: linear-gradient(
+    144deg,
+    var(--primary-gradient),
+    var(--secondary-gradient),
+    var(--primary-gradient)
+  );
+  transition: --primary-gradient 3s, --secondary-gradient 3s;
+}
+
+.projects:hover {
+  --primary-gradient: #202020;
+  --secondary-gradient: #3cdba2;
+}
+
+.contact {
+  --primary-gradient: #ededed;
+  --secondary-gradient: #ededed;
+  background: linear-gradient(
+    90deg,
+    var(--primary-gradient),
+    var(--secondary-gradient),
+    var(--primary-gradient)
+  );
+  transition: --primary-gradient 3s, --secondary-gradient 3s;
+}
+
+.contact:hover {
+  --primary-gradient: #ededed;
+  --secondary-gradient: #3cdba2;
+}
+
+.experience {
+  --primary-gradient: #3cdba2;
+  --secondary-gradient: #3cdba2;
+  background: linear-gradient(
+    45deg,
+    var(--primary-gradient),
+    var(--secondary-gradient),
+    var(--primary-gradient)
+  );
+  transition: --primary-gradient 3s, --secondary-gradient 3s;
+}
+
+.experience:hover {
+  --primary-gradient: #3cdba2;
+  --secondary-gradient: #0045ff;
+}
+
+.blog {
+  --primary-gradient: #0045ff;
+  --secondary-gradient: #0045ff;
+  background: linear-gradient(
+    30deg,
+    var(--primary-gradient),
+    var(--secondary-gradient),
+    var(--primary-gradient)
+  );
+  transition: --primary-gradient 3s, --secondary-gradient 3s;
+}
+
+.blog:hover {
+  --primary-gradient: #0045ff;
+  --secondary-gradient: #3cdba2;
+}
+
+.gradientButton {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sections > div {
+  animation: gradient-animation 10s ease infinite alternate-reverse both;
 }

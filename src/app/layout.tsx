@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${poppins.className} bg-base-100 flex flex-col h-screen justify-between`}
       >
         <Header />
-        <main className="mb-auto">{children}</main>
+        <main className="max-w-7xl mb-auto">{children}</main>
         <Footer />
       </body>
     </html>

@@ -3,7 +3,7 @@ import { HeaderNavigation } from './HeaderNavigation';
 
 const Header = () => {
   return (
-    <header className="drawer">
+    <header className="drawer mb-16 md:mb-28">
       <input id="drawerToggle" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col p-4">
         <div className="navbar w-full mx-2 max-w-7xl">
