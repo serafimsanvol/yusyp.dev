@@ -1,6 +1,4 @@
 import React from 'react';
-import AnimatedBox from './AnimatedBox';
-import Image from 'next/image';
 import Icon from '@/app/Icon/Icon';
 
 const Sections = () => {

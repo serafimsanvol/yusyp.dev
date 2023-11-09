@@ -1,3 +1,4 @@
+import SectionHeader from './components/SectionHeader/SectionHeader';
 import Sections from './components/Sections/Sections';
 
 export default function Home() {
@@ -7,7 +8,16 @@ export default function Home() {
         Andrii Yusyp <br />
         Full Stack Developer
       </h2>
-      <Sections />
+      <div className="mb-[100px]">
+        <Sections />
+      </div>
+      <SectionHeader
+        title="Experience"
+        logo="experience"
+        description={
+          "I'm Andrii Yusyp, an experienced Full Stack developer with 5 years of hands-on experience in this field."
+        }
+      />
     </>
   );
 }

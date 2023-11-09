@@ -192,3 +192,12 @@ body {
 .sections > div {
   animation: gradient-animation 10s ease infinite alternate-reverse both;
 }
+
+.iconWrapper {
+  @apply w-10;
+  @apply h-10;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply rounded-xl;
+}
