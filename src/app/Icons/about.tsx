@@ -19,7 +19,7 @@ const About = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_428_2273)">
+      <g clipPath="url(#clip0_428_2273)">
         <path
           d="M0 12C6 12 12 6 12 0C12 6 18 12 24 12C18 12 12 18 12 24C12 18 6 12 0 12Z"
           fill={fill}
@@ -27,7 +27,6 @@ const About = ({
       </g>
       <defs>
         <clipPath id="clip0_428_2273">
-          {/* <rect width={width} height={height} fill="white" /> */}
           <rect width={width} height={height} fill="none" />
         </clipPath>
       </defs>

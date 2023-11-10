@@ -17,6 +17,7 @@
 }
 
 body {
+  overflow-y: auto;
   transition: all 2s ease-in-out 2s;
   @apply bg-base-100;
   color: #f2f2f2;
@@ -200,4 +201,17 @@ body {
   @apply justify-center;
   @apply items-center;
   @apply rounded-xl;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3cdba2;
+  border-radius: 42px;
 }

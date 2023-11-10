@@ -1,3 +1,4 @@
+import JobsSection from './components/JobsSection/JobsSection';
 import SectionHeader from './components/SectionHeader/SectionHeader';
 import Sections from './components/Sections/Sections';
 
@@ -18,6 +19,7 @@ export default function Home() {
           "I'm Andrii Yusyp, an experienced Full Stack developer with 5 years of hands-on experience in this field."
         }
       />
+      <JobsSection />
     </>
   );
 }
