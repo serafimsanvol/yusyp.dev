@@ -22,7 +22,6 @@ html {
 
 body {
   overflow-y: auto;
-  /* transition: all 2s ease-in-out 2s; */
   @apply bg-base-100;
   color: #f2f2f2;
   @apply max-w-7xl;
@@ -46,7 +45,7 @@ body {
   @apply bg-neutral;
 }
 
-.sections > div:hover {
+.sections > a:hover {
   background-size: 500% 110%;
 }
 
@@ -194,7 +193,7 @@ body {
   }
 }
 
-.sections > div {
+.sections > a {
   animation: gradient-animation 10s ease infinite alternate-reverse both;
 }
 
