@@ -1,6 +1,8 @@
+import Icon from './Icon/Icon';
 import JobsSection from './components/JobsSection/JobsSection';
 import SectionHeader from './components/SectionHeader/SectionHeader';
 import Sections from './components/Sections/Sections';
+import TechnologiesSection from './components/TechnologiesSection/TechnologiesSection';
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
         }
       />
       <JobsSection />
+      <TechnologiesSection />
     </>
   );
 }

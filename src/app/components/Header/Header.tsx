@@ -6,7 +6,7 @@ const Header = () => {
     <header className="drawer mb-16 md:mb-28">
       <input id="drawerToggle" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col p-4">
-        <div className="navbar w-full mx-2 max-w-7xl">
+        <div className="navbar w-full max-w-7xl">
           <nav className="navbar-start">
             <Image src="/logo.svg" alt="logo" width={40} height={40} />
           </nav>

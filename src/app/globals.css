@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-y: auto;
   transition: all 2s ease-in-out 2s;
@@ -201,6 +205,11 @@ body {
   @apply justify-center;
   @apply items-center;
   @apply rounded-xl;
+}
+
+.custom-carousel::-webkit-scrollbar {
+  width: 1px;
+  height: 2px;
 }
 
 ::-webkit-scrollbar {

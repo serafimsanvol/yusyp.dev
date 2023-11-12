@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from '@/app/Icon/Icon';
+import Link from 'next/link';
 
 const Sections = () => {
   return (
@@ -28,14 +29,17 @@ const Sections = () => {
           <p className=" text-xl">Contact me</p>
         </div>
       </div>
-      <div className="col-span-full experience lg:col-span-4 bg-primary animated-box  h-32 text-[#1e1e1e] lg:h-[16rem]">
+      <Link
+        href={'/#Experience'}
+        className="col-span-full experience lg:col-span-4 bg-primary animated-box  h-32 text-[#1e1e1e] lg:h-[16rem]"
+      >
         <div className="flex h-10 items-center">
           <div className="w-10 h-10 bg-[#1e1e1e] flex justify-center items-center rounded-xl mr-4">
             <Icon variant="experience" />
           </div>
           <p className="text-xl">Experience</p>
         </div>
-      </div>
+      </Link>
       <div className="col-span-full blog lg:col-span-3 bg-primary animated-box  h-32 lg:h-[16rem]">
         <div className="flex h-10 items-center">
           <div className="w-10 h-10 bg-[#f2f2f2] flex justify-center items-center rounded-xl mr-4">
