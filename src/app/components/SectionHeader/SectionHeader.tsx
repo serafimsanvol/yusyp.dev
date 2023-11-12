@@ -12,7 +12,7 @@ const SectionHeader = ({
   description: string;
 }) => {
   return (
-    <div id={title} className="mb-8">
+    <div id={logo} className="mb-8">
       <div className="flex items-center mb-6">
         <div className="iconWrapper bg-primary mr-4">
           <Icon width={24} height={24} variant={logo} />

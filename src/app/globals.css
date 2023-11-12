@@ -22,7 +22,7 @@ html {
 
 body {
   overflow-y: auto;
-  transition: all 2s ease-in-out 2s;
+  /* transition: all 2s ease-in-out 2s; */
   @apply bg-base-100;
   color: #f2f2f2;
   @apply max-w-7xl;
@@ -223,4 +223,80 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #3cdba2;
   border-radius: 42px;
+}
+
+.error-page {
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 96px;
+  letter-spacing: -7px;
+}
+
+.error-page-content {
+  animation: glitch 1s linear infinite;
+}
+
+/* credits - https://codepen.io/pgalor/pen/OeRWJQ */
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.error-page-content:before,
+.error-page-content:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.error-page-content:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.error-page-content:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
 }

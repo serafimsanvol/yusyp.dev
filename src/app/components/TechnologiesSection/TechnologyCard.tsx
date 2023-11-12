@@ -11,8 +11,8 @@ const TechnologyCard = ({
   backgroundColor,
 }: Technology) => {
   return (
-    <div className="card p-6 w-full flex justify-between relative bg-neutral    min-w-[300px] min-h-[300px] mr-6 last:mr-0">
-      <div className="flex items-center">
+    <div className="card p-6 w-full flex justify-between relative bg-neutral min-w-[300px] min-h-[300px] mr-6 last:mr-0">
+      <div className="flex items-center mb-2">
         <div className="mr-4 bg-[#f2f2f2] rounded-xl flex items-center justify-center w-12 h-12">
           <Icon fill="#202020" background="white" variant={icon} />
         </div>

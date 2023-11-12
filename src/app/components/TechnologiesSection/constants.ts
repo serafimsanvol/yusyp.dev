@@ -72,7 +72,7 @@ export const TECHNOLOGIES: Technology[] = [
   {
     name: 'Nest.JS',
     description:
-      'NestJS is a framework for building efficient, scalable Node.js server-side applications. It uses progressive JavaScript, is built with TypeScript and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).',
+      'NestJS is a framework for building efficient, scalable Node.js server-side applications. It uses progressive JavaScript, is built with TypeScript and combines elements of OOP (Object Oriented Programming), FP (Functional), and FRP (Functional Reactive).',
 
     icon: 'nest',
     accentColor: '#ea2845',

@@ -1,4 +1,3 @@
-import Icon from './Icon/Icon';
 import JobsSection from './components/JobsSection/JobsSection';
 import SectionHeader from './components/SectionHeader/SectionHeader';
 import Sections from './components/Sections/Sections';
@@ -11,9 +10,7 @@ export default function Home() {
         Andrii Yusyp <br />
         Full Stack Developer
       </h2>
-      <div className="mb-[100px]">
-        <Sections />
-      </div>
+      <Sections />
       <SectionHeader
         title="Experience"
         logo="experience"

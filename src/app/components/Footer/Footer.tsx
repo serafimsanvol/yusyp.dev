@@ -10,7 +10,12 @@ const Footer = () => {
       <h6>Copyright {year} © Andrii Yusyp</h6>
       <h6 className="block">
         Designed By{' '}
-        <Link className="text-secondary inline-block" href={'/'}>
+        <Link
+          className="text-secondary inline-block"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={'https://www.behance.net/annkorshakova24'}
+        >
           {' '}
           Anna K.
         </Link>
