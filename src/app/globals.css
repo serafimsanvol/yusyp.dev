@@ -28,6 +28,10 @@ body {
   @apply mx-auto;
 }
 
+.drawer-side {
+  @apply z-10;
+}
+
 .rounded-lg {
   border-radius: 1.625rem;
 }
