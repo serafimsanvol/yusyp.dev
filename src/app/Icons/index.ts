@@ -10,6 +10,7 @@ import projects from './projects';
 import experience from './experience';
 import blog from './blog';
 import contact from './contact';
+import send from './send';
 
 const icons = {
   react,
@@ -24,6 +25,7 @@ const icons = {
   experience,
   blog,
   contact,
+  send,
 };
 
 export default icons;
