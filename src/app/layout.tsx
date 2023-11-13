@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
@@ -48,6 +49,7 @@ export default function RootLayout({
         <Header />
         <main className="max-w-7xl mb-auto px-2">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
