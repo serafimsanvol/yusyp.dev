@@ -14,6 +14,7 @@ import send from './send';
 import github from './github';
 import linkedin from './linkedin';
 import message from './message';
+import lightning from './lightning';
 
 const icons = {
   react,
@@ -32,6 +33,7 @@ const icons = {
   github,
   linkedin,
   message,
+  lightning,
 };
 
 export default icons;
