@@ -325,3 +325,9 @@ body {
     background-position: 0% 50%;
   }
 }
+
+.input,
+.textarea {
+  border-radius: 40px;
+  border: 1px solid #3cdba2;
+}

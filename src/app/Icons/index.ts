@@ -11,6 +11,9 @@ import experience from './experience';
 import blog from './blog';
 import contact from './contact';
 import send from './send';
+import github from './github';
+import linkedin from './linkedin';
+import message from './message';
 
 const icons = {
   react,
@@ -26,6 +29,9 @@ const icons = {
   blog,
   contact,
   send,
+  github,
+  linkedin,
+  message,
 };
 
 export default icons;
