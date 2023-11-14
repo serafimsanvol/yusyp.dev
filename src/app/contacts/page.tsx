@@ -45,13 +45,13 @@ const ContactsPage = () => {
         background="bg-secondary"
         title="Social Networks"
       />
-      <div className="flex justify-evenly  mb-20">
+      <div className="flex flex-col lg:flex-row lg:justify-evenly  mb-20">
         {SOCIALS.map((social) => (
           <Link
             href={social.url}
             id={social.name}
             key={social.name}
-            className="flex"
+            className="flex mb-6"
           >
             <div
               className={`left px-8 py-6 ${social.background} transition-all duration-1000 rounded-[32px] mr-2 bg-neutral`}
