@@ -3,15 +3,17 @@ import React from 'react';
 const Typescript = ({
   width = 31,
   height = 31,
-  // fill = '#EDEDED',
-  fill = 'red',
+  fill = '#EDEDED',
+  className,
 }: {
   width?: number;
   height?: number;
   fill?: string;
+  className?: string;
 }) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 31 31"

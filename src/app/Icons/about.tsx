@@ -5,14 +5,17 @@ const About = ({
   height = 24,
   fill = '#0045FF',
   background = '#001f2b',
+  className,
 }: {
   width?: number;
   height?: number;
   fill?: string;
   background?: string;
+  className?: string;
 }) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 24 24"

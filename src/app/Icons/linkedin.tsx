@@ -4,13 +4,16 @@ const Linkedin = ({
   width = 30,
   height = 30,
   fill = '#1E1E1E',
+  className,
 }: {
   width?: number;
   height?: number;
   fill?: string;
+  className?: string;
 }) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 30 30"

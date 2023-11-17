@@ -15,6 +15,8 @@ import github from './github';
 import linkedin from './linkedin';
 import message from './message';
 import lightning from './lightning';
+import close from './close';
+import snap from './snap';
 
 const icons = {
   react,
@@ -34,6 +36,8 @@ const icons = {
   linkedin,
   message,
   lightning,
+  close,
+  snap,
 };
 
 export default icons;

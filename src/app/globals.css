@@ -331,3 +331,16 @@ body {
   border-radius: 40px;
   border: 1px solid #3cdba2;
 }
+
+.input-error {
+  border: none;
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(2px);
+}
+.modal-box {
+  border-radius: 50px;
+  max-width: calc(100vw - 1rem);
+  width: 100%;
+}

@@ -4,13 +4,16 @@ const Blog = ({
   width = 24,
   height = 24,
   fill = '#0045FF',
+  className,
 }: {
   width?: number;
   height?: number;
   fill?: string;
+  className?: string;
 }) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 24 24"

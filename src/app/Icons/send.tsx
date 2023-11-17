@@ -4,13 +4,16 @@ const Send = ({
   width = 34,
   height = 34,
   fill = '#F2F2F2',
+  className,
 }: {
   width?: number;
   height?: number;
   fill?: string;
+  className?: string;
 }) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 24 24"

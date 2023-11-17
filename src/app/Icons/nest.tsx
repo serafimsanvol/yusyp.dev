@@ -4,13 +4,16 @@ const nest = ({
   width = 34,
   height = 33,
   fill = 'green',
+  className,
 }: {
   width?: number;
   height?: number;
   fill?: string;
+  className?: string;
 }) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 34 33"

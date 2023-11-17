@@ -2,13 +2,16 @@ const React = ({
   width = 35,
   height = 30,
   fill = '#EDEDED',
+  className,
 }: {
   width?: number;
   height?: number;
   fill?: string;
+  className?: string;
 }) => {
   return (
     <svg
+      className={className}
       fill={fill}
       width={width}
       height={height}

@@ -4,15 +4,18 @@ const GitHub = ({
   width = 34,
   height = 34,
   fill = '#1E1E1E',
+  className,
 }: {
   width?: number;
   height?: number;
   fill?: string;
+  className?: string;
 }) => {
   return (
     <svg
       width={width}
       height={height}
+      className={className}
       viewBox="0 0 34 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
