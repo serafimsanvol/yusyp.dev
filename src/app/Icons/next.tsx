@@ -63,7 +63,7 @@ const next = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-opacity="0" />
+          <stop offset="1" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_523_3636"
@@ -74,7 +74,7 @@ const next = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-opacity="0" />
+          <stop offset="1" stopOpacity="0" />
         </linearGradient>
         <clipPath id="clip0_523_3636">
           <rect width="34" height="34" fill="white" />

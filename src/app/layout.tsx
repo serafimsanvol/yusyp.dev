@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
@@ -11,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'yusyp.dev',
+  title: 'Personal website of software developer Andrii Yusyp',
   description: 'Personal website of software developer Andrii Yusyp',
 };
 
@@ -49,7 +48,6 @@ export default function RootLayout({
         <Header />
         <main className="max-w-7xl mb-auto px-2">{children}</main>
         <Footer />
-        <Analytics />
       </body>
     </html>
   );

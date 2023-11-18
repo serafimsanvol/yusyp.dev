@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { HeaderNavigation } from './HeaderNavigation';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
       <div className="drawer-content flex flex-col p-4">
         <div className="navbar w-full max-w-7xl">
           <nav className="navbar-start">
-            <Image src="/logo.svg" alt="logo" width={40} height={40} />
+            <Link href="/">
+              <Image src="/logo.svg" alt="logo" width={40} height={40} />
+            </Link>
           </nav>
           <nav className="navbar-center hidden lg:flex">
             <HeaderNavigation />
@@ -46,7 +49,9 @@ const Header = () => {
           className="drawer-overlay"
         ></label>
         <nav id="drawer-menu" className="menu p-4 w-80 min-h-full bg-neutral">
-          <Image src="/logo.svg" alt="logo" width={40} height={40} />
+          <Link href="/">
+            <Image src="/logo.svg" alt="logo" width={40} height={40} />
+          </Link>
           <HeaderNavigation orientation="vertical" />
         </nav>
       </div>
