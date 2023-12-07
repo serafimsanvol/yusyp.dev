@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import ClarityScript from './components/ClarityScript/ClarityScript';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -48,6 +49,7 @@ export default function RootLayout({
         <Header />
         <main className="max-w-7xl mb-auto px-2">{children}</main>
         <Footer />
+        <ClarityScript />
       </body>
     </html>
   );
