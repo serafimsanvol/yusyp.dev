@@ -326,6 +326,10 @@ body {
   }
 }
 
+.gradientButton:disabled {
+  background: #bebebe;
+}
+
 .input,
 .textarea {
   border-radius: 40px;

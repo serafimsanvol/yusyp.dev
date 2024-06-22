@@ -18,6 +18,8 @@ const Form = () => {
     formState: { errors: formErrors },
   } = useForm();
 
+  const [isLoading, setLoading] = useState(false);
+
   const defaultData = {
     data: null,
     error: false,
@@ -30,12 +32,17 @@ const Form = () => {
     useState<FetchResponse>(defaultData);
 
   const sendEmail = async (data: ContactFormData) => {
-    const result = await customFetch('/api/contacts/', {
-      cache: 'no-store',
-      method: 'POST',
-      body: JSON.stringify(data),
-    });
-    setState(result);
+    try {
+      setLoading(true);
+      const result = await customFetch('/api/contacts/', {
+        cache: 'no-store',
+        method: 'POST',
+        body: JSON.stringify(data),
+      });
+      setState(result);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const closeModal = () => setState(defaultData);
@@ -67,11 +74,20 @@ const Form = () => {
         placeholder="Message"
       />
       <button
+        disabled={isLoading}
         type="submit"
-        className="btn disabled:bg-[#BEBEBE] text-[#f2f2f2] col-span-2 flex content-center justify-center w-full bg-primary p-8 rounded-[40px] gradientButton"
+        className="btn text-[#f2f2f2] col-span-2 flex content-center justify-center w-full bg-primary p-8 rounded-[40px] gradientButton"
       >
-        <span className="text-xl text-[#f2f2f2]  mr-2 normal-case">Send</span>
-        <Icon variant="send" fill="#f2f2f2" height={24} width={24} />
+        {isLoading ? (
+          <span className="loading loading-spinner loading-lg text-secondary"></span>
+        ) : (
+          <>
+            <span className="text-xl text-[#f2f2f2]  mr-2 normal-case">
+              Send
+            </span>
+            <Icon variant="send" fill="#f2f2f2" height={24} width={24} />
+          </>
+        )}
       </button>
       {error && (
         <Modal closeModal={closeModal} message={message} name="error" />
